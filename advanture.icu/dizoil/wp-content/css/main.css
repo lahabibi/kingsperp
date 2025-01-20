@@ -1,0 +1,96 @@
+#slider {
+  height: 500px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-container {
+  width: 1600px;
+  margin: auto;
+}
+
+.slider-subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .slide-img {
+    width: 100%;
+    height: 230px;
+    border: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 600px) {
+  .slide-img {
+    width: 100%;
+    height: 430px;
+    border: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+}
+
+.slide-img:hover {
+  box-shadow: 0 0 0 200px #00000099 inset;
+}
+
+.slide-img a {
+  opacity: 0;
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: #fbe700 !important;
+}
+
+.slide-text {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+.slide-img:hover a {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.img-1 {
+  background-image: url("../../image/mart.jpg");
+}
+
+.img-2 {
+  background-image: url("../../image/tyre.jpg");
+}
+
+.img-3 {
+  background-image: url("../../image/res.avif");
+}
+
+.img-4 {
+  background-image: url("../../image/phar.avif");
+}
+
+.img-5 {
+  background-image: url("../../image/g2.jpg");
+}
+
+@media (max-width: 1600px) {
+  .slider-container {
+    width: 100%;
+  }
+}

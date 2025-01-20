@@ -1,0 +1,430 @@
+.elementor-kit-109 {
+  --e-global-color-primary: #3b4753;
+  --e-global-color-secondary: #9ca3b5;
+  --e-global-color-text: #6a6f83;
+  --e-global-color-accent: #fce701;
+  /* --e-global-color-accent: #c99c00; */
+  /* --e-global-color-accent: #4d0074; */
+  --e-global-color-dea41e4: #fcfcfc;
+  --e-global-color-a185853: #f2f2f4;
+  --e-global-color-308e809: #202833;
+  --e-global-color-a291686: #ffffff;
+  --e-global-color-91455cb: #bdbdbd;
+  --e-global-color-a9820b7: #000000;
+  --e-global-color-74046ac: #ffffff42;
+  --e-global-color-6fdd327: #e1e1e1;
+  --e-global-color-efef4f9: #ffffff00;
+  --e-global-typography-primary-font-family: "Plus Jakarta Sans";
+  --e-global-typography-primary-font-size: 70px;
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-primary-text-transform: capitalize;
+  --e-global-typography-primary-line-height: 1em;
+  --e-global-typography-primary-letter-spacing: -1.9px;
+  --e-global-typography-secondary-font-family: "Plus Jakarta Sans";
+  --e-global-typography-secondary-font-size: 48px;
+  --e-global-typography-secondary-font-weight: 600;
+  --e-global-typography-secondary-line-height: 1.1em;
+  --e-global-typography-text-font-family: "Poppins";
+  --e-global-typography-text-font-size: 15px;
+  --e-global-typography-text-font-weight: 500;
+  --e-global-typography-text-text-decoration: none;
+  --e-global-typography-text-line-height: 1.5em;
+  --e-global-typography-accent-font-family: "Poppins";
+  --e-global-typography-accent-font-size: 14px;
+  --e-global-typography-accent-font-weight: 600;
+  --e-global-typography-accent-text-transform: uppercase;
+  --e-global-typography-accent-text-decoration: none;
+  --e-global-typography-accent-line-height: 1.2em;
+  --e-global-typography-accent-letter-spacing: 2px;
+  --e-global-typography-b2ce6af-font-family: "Poppins";
+  --e-global-typography-b2ce6af-font-size: 15px;
+  --e-global-typography-b2ce6af-font-weight: 500;
+  --e-global-typography-b2ce6af-text-decoration: none;
+  --e-global-typography-b2ce6af-line-height: 1.5em;
+  --e-global-typography-69c152f-font-family: "Poppins";
+  --e-global-typography-69c152f-font-size: 13px;
+  --e-global-typography-69c152f-text-decoration: none;
+  --e-global-typography-69c152f-line-height: 1.5em;
+  --e-global-typography-520c191-font-family: "Poppins";
+  --e-global-typography-520c191-font-size: 15px;
+  --e-global-typography-520c191-font-weight: 600;
+  --e-global-typography-520c191-text-decoration: none;
+  --e-global-typography-583e54c-font-family: "Poppins";
+  --e-global-typography-583e54c-font-size: 64px;
+  --e-global-typography-583e54c-font-weight: 600;
+  --e-global-typography-583e54c-text-transform: capitalize;
+  --e-global-typography-583e54c-line-height: 1.2em;
+  --e-global-typography-583e54c-letter-spacing: 0px;
+  --e-global-typography-5d167aa-font-family: "Poppins";
+  --e-global-typography-5d167aa-font-size: 46px;
+  --e-global-typography-5d167aa-font-weight: 600;
+  --e-global-typography-5d167aa-text-decoration: none;
+  --e-global-typography-5d167aa-line-height: 1.4em;
+  --e-global-typography-d3dae9a-font-family: "Poppins";
+  --e-global-typography-d3dae9a-font-size: 36px;
+  --e-global-typography-d3dae9a-font-weight: 600;
+  --e-global-typography-d3dae9a-text-decoration: none;
+  --e-global-typography-d3dae9a-line-height: 1.5em;
+  --e-global-typography-83682a1-font-family: "Poppins";
+  --e-global-typography-83682a1-font-size: 27px;
+  --e-global-typography-83682a1-font-weight: 600;
+  --e-global-typography-83682a1-text-decoration: none;
+  --e-global-typography-83682a1-line-height: 1.5em;
+  --e-global-typography-7044a64-font-family: "Poppins";
+  --e-global-typography-7044a64-font-size: 20px;
+  --e-global-typography-7044a64-font-weight: 600;
+  --e-global-typography-7044a64-text-decoration: none;
+  --e-global-typography-7044a64-line-height: 1.5em;
+  --e-global-typography-84ca66e-font-family: "Poppins";
+  --e-global-typography-84ca66e-font-size: 15px;
+  --e-global-typography-84ca66e-font-weight: 600;
+  --e-global-typography-84ca66e-text-transform: uppercase;
+  --e-global-typography-84ca66e-text-decoration: none;
+  --e-global-typography-84ca66e-line-height: 1.2em;
+  --e-global-typography-84ca66e-letter-spacing: 1.6px;
+  --e-global-typography-112b6c4-font-family: "Poppins";
+  --e-global-typography-112b6c4-font-size: 13px;
+  --e-global-typography-112b6c4-font-weight: 300;
+  --e-global-typography-60f59c2-font-family: "Poppins";
+  --e-global-typography-60f59c2-font-size: 120px;
+  --e-global-typography-60f59c2-font-weight: 700;
+  --e-global-typography-60f59c2-line-height: 1em;
+  color: var(--e-global-color-text);
+  font-family: var(--e-global-typography-b2ce6af-font-family), Sans-serif;
+  font-size: var(--e-global-typography-b2ce6af-font-size);
+  font-weight: var(--e-global-typography-b2ce6af-font-weight);
+  text-decoration: var(--e-global-typography-b2ce6af-text-decoration);
+  line-height: var(--e-global-typography-b2ce6af-line-height);
+  letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+  word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+}
+.elementor-kit-109 a {
+  color: var(--e-global-color-text);
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+.elementor-kit-109 a:hover {
+  color: var(--e-global-color-accent);
+}
+.elementor-kit-109 h1 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-583e54c-font-family), Sans-serif;
+  font-size: var(--e-global-typography-583e54c-font-size);
+  font-weight: var(--e-global-typography-583e54c-font-weight);
+  text-transform: var(--e-global-typography-583e54c-text-transform);
+  line-height: var(--e-global-typography-583e54c-line-height);
+  letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+  word-spacing: var(--e-global-typography-583e54c-word-spacing);
+}
+.elementor-kit-109 h2 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-5d167aa-font-family), Sans-serif;
+  font-size: var(--e-global-typography-5d167aa-font-size);
+  font-weight: var(--e-global-typography-5d167aa-font-weight);
+  text-decoration: var(--e-global-typography-5d167aa-text-decoration);
+  line-height: var(--e-global-typography-5d167aa-line-height);
+  letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+  word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+}
+.elementor-kit-109 h3 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-d3dae9a-font-family), Sans-serif;
+  font-size: var(--e-global-typography-d3dae9a-font-size);
+  font-weight: var(--e-global-typography-d3dae9a-font-weight);
+  text-decoration: var(--e-global-typography-d3dae9a-text-decoration);
+  line-height: var(--e-global-typography-d3dae9a-line-height);
+  letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+  word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+}
+.elementor-kit-109 h4 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-83682a1-font-family), Sans-serif;
+  font-size: var(--e-global-typography-83682a1-font-size);
+  font-weight: var(--e-global-typography-83682a1-font-weight);
+  text-decoration: var(--e-global-typography-83682a1-text-decoration);
+  line-height: var(--e-global-typography-83682a1-line-height);
+  letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+  word-spacing: var(--e-global-typography-83682a1-word-spacing);
+}
+.elementor-kit-109 h5 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-7044a64-font-family), Sans-serif;
+  font-size: var(--e-global-typography-7044a64-font-size);
+  font-weight: var(--e-global-typography-7044a64-font-weight);
+  text-decoration: var(--e-global-typography-7044a64-text-decoration);
+  line-height: var(--e-global-typography-7044a64-line-height);
+  letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+  word-spacing: var(--e-global-typography-7044a64-word-spacing);
+}
+.elementor-kit-109 h6 {
+  color: var(--e-global-color-308e809);
+  font-family: var(--e-global-typography-84ca66e-font-family), Sans-serif;
+  font-size: var(--e-global-typography-84ca66e-font-size);
+  font-weight: var(--e-global-typography-84ca66e-font-weight);
+  text-transform: var(--e-global-typography-84ca66e-text-transform);
+  text-decoration: var(--e-global-typography-84ca66e-text-decoration);
+  line-height: var(--e-global-typography-84ca66e-line-height);
+  letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+  word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+}
+.elementor-kit-109 button,
+.elementor-kit-109 input[type="button"],
+.elementor-kit-109 input[type="submit"],
+.elementor-kit-109 .elementor-button {
+  font-family: var(--e-global-typography-b2ce6af-font-family), Sans-serif;
+  font-size: var(--e-global-typography-b2ce6af-font-size);
+  font-weight: var(--e-global-typography-b2ce6af-font-weight);
+  text-decoration: var(--e-global-typography-b2ce6af-text-decoration);
+  line-height: var(--e-global-typography-b2ce6af-line-height);
+  letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+  word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  color: var(--e-global-color-a9820b7);
+  background-color: var(--e-global-color-accent);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+.elementor-kit-109 button:hover,
+.elementor-kit-109 button:focus,
+.elementor-kit-109 input[type="button"]:hover,
+.elementor-kit-109 input[type="button"]:focus,
+.elementor-kit-109 input[type="submit"]:hover,
+.elementor-kit-109 input[type="submit"]:focus,
+.elementor-kit-109 .elementor-button:hover,
+.elementor-kit-109 .elementor-button:focus {
+  color: var(--e-global-color-dea41e4);
+  background-color: var(--e-global-color-text);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+}
+.elementor-kit-109 label {
+  color: var(--e-global-color-text);
+  font-family: var(--e-global-typography-text-font-family), Sans-serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+  text-decoration: var(--e-global-typography-text-text-decoration);
+  line-height: var(--e-global-typography-text-line-height);
+}
+.elementor-kit-109 input:not([type="button"]):not([type="submit"]),
+.elementor-kit-109 textarea,
+.elementor-kit-109 .elementor-field-textual {
+  font-family: var(--e-global-typography-b2ce6af-font-family), Sans-serif;
+  font-size: var(--e-global-typography-b2ce6af-font-size);
+  font-weight: var(--e-global-typography-b2ce6af-font-weight);
+  text-decoration: var(--e-global-typography-b2ce6af-text-decoration);
+  line-height: var(--e-global-typography-b2ce6af-line-height);
+  letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+  word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  color: var(--e-global-color-secondary);
+  accent-color: var(--e-global-color-accent);
+  background-color: var(--e-global-color-dea41e4);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-6fdd327);
+  border-radius: 0px 0px 0px 0px;
+}
+.elementor-kit-109 input:focus:not([type="button"]):not([type="submit"]),
+.elementor-kit-109 textarea:focus,
+.elementor-kit-109 .elementor-field-textual:focus {
+  color: var(--e-global-color-308e809);
+  background-color: var(--e-global-color-a291686);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-primary);
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1280px;
+}
+.e-con {
+  --container-max-width: 1280px;
+}
+.elementor-widget:not(:last-child) {
+  margin-bottom: 20px;
+}
+.elementor-element {
+  --widgets-spacing: 20px;
+}
+ {
+}
+h1.entry-title {
+  display: var(--page-title-display);
+}
+.site-header {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media (max-width: 1024px) {
+  .elementor-kit-109 {
+    --e-global-typography-b2ce6af-font-size: 15px;
+    --e-global-typography-69c152f-font-size: 13px;
+    --e-global-typography-520c191-font-size: 15px;
+    --e-global-typography-583e54c-font-size: 48px;
+    --e-global-typography-5d167aa-font-size: 36px;
+    --e-global-typography-d3dae9a-font-size: 27px;
+    --e-global-typography-83682a1-font-size: 22px;
+    --e-global-typography-7044a64-font-size: 17px;
+    --e-global-typography-84ca66e-font-size: 16px;
+    --e-global-typography-112b6c4-font-size: 12px;
+    --e-global-typography-60f59c2-font-size: 100px;
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-kit-109 a {
+    font-size: 15px;
+  }
+  .elementor-kit-109 h1 {
+    font-size: var(--e-global-typography-583e54c-font-size);
+    line-height: var(--e-global-typography-583e54c-line-height);
+    letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+    word-spacing: var(--e-global-typography-583e54c-word-spacing);
+  }
+  .elementor-kit-109 h2 {
+    font-size: var(--e-global-typography-5d167aa-font-size);
+    line-height: var(--e-global-typography-5d167aa-line-height);
+    letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+    word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+  }
+  .elementor-kit-109 h3 {
+    font-size: var(--e-global-typography-d3dae9a-font-size);
+    line-height: var(--e-global-typography-d3dae9a-line-height);
+    letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+    word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+  }
+  .elementor-kit-109 h4 {
+    font-size: var(--e-global-typography-83682a1-font-size);
+    line-height: var(--e-global-typography-83682a1-line-height);
+    letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+    word-spacing: var(--e-global-typography-83682a1-word-spacing);
+  }
+  .elementor-kit-109 h5 {
+    font-size: var(--e-global-typography-7044a64-font-size);
+    line-height: var(--e-global-typography-7044a64-line-height);
+    letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+    word-spacing: var(--e-global-typography-7044a64-word-spacing);
+  }
+  .elementor-kit-109 h6 {
+    font-size: var(--e-global-typography-84ca66e-font-size);
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+    word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+  }
+  .elementor-kit-109 button,
+  .elementor-kit-109 input[type="button"],
+  .elementor-kit-109 input[type="submit"],
+  .elementor-kit-109 .elementor-button {
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-kit-109 label {
+    font-size: var(--e-global-typography-text-font-size);
+    line-height: var(--e-global-typography-text-line-height);
+  }
+  .elementor-kit-109 input:not([type="button"]):not([type="submit"]),
+  .elementor-kit-109 textarea,
+  .elementor-kit-109 .elementor-field-textual {
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1024px;
+  }
+  .e-con {
+    --container-max-width: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  .elementor-kit-109 {
+    --e-global-typography-text-font-size: 14px;
+    --e-global-typography-accent-font-size: 12px;
+    --e-global-typography-b2ce6af-font-size: 14px;
+    --e-global-typography-69c152f-font-size: 12px;
+    --e-global-typography-520c191-font-size: 14px;
+    --e-global-typography-583e54c-font-size: 38px;
+    --e-global-typography-5d167aa-font-size: 28px;
+    --e-global-typography-d3dae9a-font-size: 24px;
+    --e-global-typography-83682a1-font-size: 20px;
+    --e-global-typography-7044a64-font-size: 16px;
+    --e-global-typography-84ca66e-font-size: 14px;
+    --e-global-typography-112b6c4-font-size: 11px;
+    --e-global-typography-60f59c2-font-size: 60px;
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-kit-109 a {
+    font-size: 14px;
+  }
+  .elementor-kit-109 h1 {
+    font-size: var(--e-global-typography-583e54c-font-size);
+    line-height: var(--e-global-typography-583e54c-line-height);
+    letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+    word-spacing: var(--e-global-typography-583e54c-word-spacing);
+  }
+  .elementor-kit-109 h2 {
+    font-size: var(--e-global-typography-5d167aa-font-size);
+    line-height: var(--e-global-typography-5d167aa-line-height);
+    letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+    word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+  }
+  .elementor-kit-109 h3 {
+    font-size: var(--e-global-typography-d3dae9a-font-size);
+    line-height: var(--e-global-typography-d3dae9a-line-height);
+    letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+    word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+  }
+  .elementor-kit-109 h4 {
+    font-size: var(--e-global-typography-83682a1-font-size);
+    line-height: var(--e-global-typography-83682a1-line-height);
+    letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+    word-spacing: var(--e-global-typography-83682a1-word-spacing);
+  }
+  .elementor-kit-109 h5 {
+    font-size: var(--e-global-typography-7044a64-font-size);
+    line-height: var(--e-global-typography-7044a64-line-height);
+    letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+    word-spacing: var(--e-global-typography-7044a64-word-spacing);
+  }
+  .elementor-kit-109 h6 {
+    font-size: var(--e-global-typography-84ca66e-font-size);
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+    word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+  }
+  .elementor-kit-109 button,
+  .elementor-kit-109 input[type="button"],
+  .elementor-kit-109 input[type="submit"],
+  .elementor-kit-109 .elementor-button {
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-kit-109 label {
+    font-size: var(--e-global-typography-text-font-size);
+    line-height: var(--e-global-typography-text-line-height);
+  }
+  .elementor-kit-109 input:not([type="button"]):not([type="submit"]),
+  .elementor-kit-109 textarea,
+  .elementor-kit-109 .elementor-field-textual {
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 767px;
+  }
+  .e-con {
+    --container-max-width: 767px;
+  }
+}
