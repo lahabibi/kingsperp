@@ -23,6 +23,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="alternate"
       type="application/rss+xml"
       title="Diz Oil &raquo; Feed"
@@ -129,6 +134,18 @@
     </script>
 
     <style>
+      .sub-title:hover {
+        background-color: #4d0074;
+        color: #fff;
+      }
+      .bannercaption {
+        font-family: "Poppins", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        font-style: italic; /* Makes the text italic */
+        color: #ffffff; /* Adjust as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
+      }
       .bannerMobile {
         position: relative;
         background-image: url("./advanture.icu/dizoil/image/test.jpg"); /* Set initial image */
@@ -223,6 +240,27 @@
         padding: 0 1rem;
         font-size: 1rem;
         color: #fff;
+      }
+
+      .indicatorContainer {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+      }
+
+      .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+      }
+
+      .indicator.active {
+        background-color: white;
       }
     </style>
     <link
@@ -1660,8 +1698,9 @@
                                     >
                                       <li
                                         id="menu-item-96"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-84 current_page_item menu-item-96"
+                                        class="menu-item menu-item-type-post_type current-menu-item menu-item-object-page menu-item-home page_item page-item-84 current_page_item menu-item-96"
                                       >
+                                        <!--  -->
                                         <a href="index.html" aria-current="page"
                                           >Home</a
                                         >
@@ -1686,15 +1725,19 @@
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html"
-                                              >Automotive Gasoil (Diesel)</a
+                                            <a
+                                              class="sub-title"
+                                              href="fuel.html"
+                                              >Gasoil (Diesel)</a
                                             >
                                           </li>
                                           <li
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html"
+                                            <a
+                                              href="gasoline.html"
+                                              class="sub-title"
                                               >Gasoline (Petrol)</a
                                             >
                                           </li>
@@ -1702,35 +1745,41 @@
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html">Engine Oils</a>
+                                            <a
+                                              href="engineoil.html"
+                                              class="sub-title"
+                                              >Engine Oils</a
+                                            >
                                           </li>
                                           <li
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html">Mart</a>
+                                            <a
+                                              href="mart.html"
+                                              class="sub-title"
+                                              >Mart</a
+                                            >
                                           </li>
                                           <li
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html">Lube Bay</a>
+                                            <a
+                                              href="lubebay.html"
+                                              class="sub-title"
+                                              >Lube Bay</a
+                                            >
                                           </li>
                                           <li
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="fuel.html"
+                                            <a
+                                              href="vulc.html"
+                                              class="sub-title"
                                               >Vulcanizing Center
                                             </a>
-                                          </li>
-                                          <li
-                                            id="menu-item-103"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"
-                                          >
-                                            <a href="engineoil.html"
-                                              >Engine Oil</a
-                                            >
                                           </li>
                                         </ul>
                                       </li>
@@ -1751,13 +1800,21 @@
                                             id="menu-item-94"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
-                                            <a href="gallery.html">Gallery</a>
+                                            <a
+                                              href="gallery.html"
+                                              class="sub-title"
+                                              >Gallery</a
+                                            >
                                           </li>
                                           <li
                                             id="menu-item-103"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"
                                           >
-                                            <a href="videocenter.html">Video</a>
+                                            <a
+                                              href="videocenter.html"
+                                              class="sub-title"
+                                              >Video</a
+                                            >
                                           </li>
                                         </ul>
                                       </li>
@@ -1929,7 +1986,14 @@
                                 display: inline-block;
                               }
                             </style>
-                            <p class="bannerlongtext" style="color: #fff">
+                            <p
+                              class="bannerlongtext"
+                              style="
+                                color: #fff;
+                                font-style: italic;
+                                font-family: 'Poppins', sans-serif;
+                              "
+                            >
                               KingsPerp is a Ghanaian Oil Marketing Company
                               (OMC) licensed by the National Petroleum
                               Authority. With consistency over the years, we
@@ -1950,12 +2014,14 @@
                                 href="contact.html"
                                 class="elementor-button-link elementor-button elementor-size-md"
                                 role="button"
+                                style="background-color: #4d0074"
                               >
                                 <span class="elementor-button-content-wrapper">
                                   <span
                                     class="elementor-button-icon elementor-align-icon-right"
                                   >
                                     <i
+                                      style="color: #fff"
                                       aria-hidden="true"
                                       class="fas fa-angle-right"
                                     ></i>
@@ -1972,6 +2038,11 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="indicatorContainer">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
                   </div>
                 </section>
                 <section
@@ -2225,7 +2296,10 @@
                           style="background-color: #4d0074"
                         ></div>
                       </div>
-                      <div class="heading-section-description">
+                      <div
+                        class="heading-section-description"
+                        style="font-style: italic"
+                      >
                         <p>
                           Kingsperp Oil Limited is an Oil Marketing Company
                           (OMC) licensed by the National Petroleum Authority
@@ -3318,7 +3392,10 @@
                       <div class="heading-section-separator">
                         <div class="separator-wrapper style-solid"></div>
                       </div>
-                      <div class="heading-section-description">
+                      <div
+                        class="heading-section-description"
+                        style="font-style: italic"
+                      >
                         At KINGSPERP OIL LIMITED, our mission is to excel in the
                         marketing and distribution of energy products while
                         adhering to the highest standards of ethics and serving
@@ -3358,7 +3435,10 @@
                       <div class="heading-section-separator">
                         <div class="separator-wrapper style-solid"></div>
                       </div>
-                      <div class="heading-section-description">
+                      <div
+                        class="heading-section-description"
+                        style="font-style: italic"
+                      >
                         To be the preferred and trusted partner in providing
                         high-quality, reliable, and sustainable energy solutions
                         to empower individuals, businesses, and industries. Our
@@ -3374,7 +3454,10 @@
                       <div class="heading-section-separator">
                         <div class="separator-wrapper style-solid"></div>
                       </div>
-                      <div class="heading-section-description">
+                      <div
+                        class="heading-section-description"
+                        style="font-style: italic"
+                      >
                         ✔️ Keen to High Standards <br />
                         ✔️ Innovative Growth <br />
                         ✔️ Negotiable Agreements <br />
@@ -3434,6 +3517,7 @@
               data-id="051c07c"
               data-element_type="section"
               data-settings='{"background_background":"classic","animation":"fadeInUp"}'
+              style="background-color: #1a1a1a"
             >
               <div class="elementor-container elementor-column-gap-default">
                 <div
@@ -3493,7 +3577,18 @@
                               data-element_type="widget"
                               data-widget_type="text-editor.default"
                             >
-                              <div class="elementor-widget-container"></div>
+                              <div
+                                class="elementor-widget-container"
+                                style="font-style: italic"
+                              >
+                                <p>
+                                  Kingsperp Oil Limited is an Oil Marketing
+                                  Company (OMC) licensed by the National
+                                  Petroleum Authority (NPA) to supply petroleum
+                                  products to the general public, with the
+                                  objective to meet customers’ demand.
+                                </p>
+                              </div>
                             </div>
                             <div
                               class="elementor-element elementor-element-914fcde elementor-widget__width-auto elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
@@ -4053,39 +4148,47 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const banner = document.querySelector(".bannerMobile");
+        const indicators = document.querySelectorAll(".indicator");
         const images = [
-          "./advanture.icu/dizoil/image/test.jpg",
-          "./advanture.icu/dizoil/image/test1.jpg",
-          "./advanture.icu/dizoil/image/test3.jpg",
+          "./advanture.icu/dizoil/image/test6.jpg",
+          "./advanture.icu/dizoil/image/y1.jpg",
+          "./advanture.icu/dizoil/image/tamale.jpg",
         ];
         let currentIndex = 0;
+        let interval;
 
-        // Set the initial background and also the ::before element's background
-        banner.style.setProperty(
-          "--next-image",
-          `url('${images[currentIndex]}')`
-        );
-        banner.style.backgroundImage = `url('${images[currentIndex]}')`;
+        function updateIndicators(index) {
+          indicators.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+          });
+        }
 
-        function changeBackground() {
-          let nextIndex = (currentIndex + 1) % images.length;
+        function changeBackground(index = (currentIndex + 1) % images.length) {
+          currentIndex = index;
 
-          // Apply the new image to the pseudo-element
-          banner.style.setProperty(
-            "--next-image",
-            `url('${images[nextIndex]}')`
-          );
+          banner.style.backgroundImage = `url('${images[currentIndex]}')`;
           banner.classList.add("transitioning");
 
           setTimeout(() => {
-            // Update background image after animation completes
-            banner.style.backgroundImage = `url('${images[nextIndex]}')`;
-            banner.classList.remove("transitioning"); // Reset animation
-            currentIndex = nextIndex;
-          }, 1000); // Match animation duration
+            banner.classList.remove("transitioning");
+            updateIndicators(currentIndex);
+          }, 1000);
         }
 
-        setInterval(changeBackground, 6000);
+        function startAutoScroll() {
+          interval = setInterval(() => changeBackground(), 6000);
+        }
+
+        // Click event for indicators
+        indicators.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            clearInterval(interval); // Stop auto-scroll
+            changeBackground(index); // Change to clicked image
+            startAutoScroll(); // Restart auto-scroll
+          });
+        });
+
+        startAutoScroll(); // Start auto-scrolling initially
       });
     </script>
 
