@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
@@ -58,7 +58,7 @@
           i = a.createElement("canvas"),
           p = i.getContext && i.getContext("2d");
         function s(e, t) {
-          p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0);
+          (p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0));
           e = i.toDataURL();
           return (
             p.clearRect(0, 0, i.width, i.height),
@@ -68,9 +68,9 @@
         }
         function c(e) {
           var t = a.createElement("script");
-          (t.src = e),
+          ((t.src = e),
             (t.defer = t.type = "text/javascript"),
-            a.getElementsByTagName("head")[0].appendChild(t);
+            a.getElementsByTagName("head")[0].appendChild(t));
         }
         for (
           o = Array("flag", "emoji"),
@@ -79,7 +79,7 @@
           r < o.length;
           r++
         )
-          (t.supports[o[r]] = (function (e) {
+          ((t.supports[o[r]] = (function (e) {
             if (p && p.fillText)
               switch (
                 ((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)
@@ -87,21 +87,21 @@
                 case "flag":
                   return s(
                     "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                    "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+                    "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f",
                   )
                     ? !1
                     : !s(
                         "\ud83c\uddfa\ud83c\uddf3",
-                        "\ud83c\uddfa\u200b\ud83c\uddf3"
+                        "\ud83c\uddfa\u200b\ud83c\uddf3",
                       ) &&
                         !s(
                           "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                          "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                          "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f",
                         );
                 case "emoji":
                   return !s(
                     "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
-                    "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+                    "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff",
                   );
               }
             return !1;
@@ -109,8 +109,8 @@
             (t.supports.everything = t.supports.everything && t.supports[o[r]]),
             "flag" !== o[r] &&
               (t.supports.everythingExceptFlag =
-                t.supports.everythingExceptFlag && t.supports[o[r]]);
-        (t.supports.everythingExceptFlag =
+                t.supports.everythingExceptFlag && t.supports[o[r]]));
+        ((t.supports.everythingExceptFlag =
           t.supports.everythingExceptFlag && !t.supports.flag),
           (t.DOMReady = !1),
           (t.readyCallback = function () {
@@ -129,7 +129,7 @@
                 })),
             (e = t.source || {}).concatemoji
               ? c(e.concatemoji)
-              : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
+              : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))));
       })(window, document, window._wpemojiSettings);
     </script>
 
@@ -197,7 +197,9 @@
         background-position: center;
         background-repeat: no-repeat;
         opacity: 0;
-        transition: top 1s ease-in-out, opacity 1s ease-in-out;
+        transition:
+          top 1s ease-in-out,
+          opacity 1s ease-in-out;
       }
 
       .bannerMobile.transitioning::before {
@@ -415,8 +417,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -2085,7 +2087,7 @@
                               style="
                                 color: #fff;
                                 font-style: italic;
-                                font-family: 'Poppins', sans-serif;
+                                font-family: &quot;Poppins&quot;, sans-serif;
                               "
                             >
                               KingsPerp is a Ghanaian Oil Marketing Company
@@ -2340,11 +2342,11 @@
         <div class="ticker-wrap">
           <div class="ticker">
             <div class="ticker_item">
-              REVISED FUEL PRICES EFFECTIVE SUNDAY 9TH NOVEMBER, 2025. SUPER -
-              GHC 11.97 DIESEL  - GHC 11.38 | REVISED FUEL PRICES EFFECTIVE
-              SUNDAY 9TH NOVEMBER, 2025. SUPER - GHC 11.97 DIESEL  - GHC 11.38 |
-              REVISED FUEL PRICES EFFECTIVE SUNDAY 9TH NOVEMBER, 2025. SUPER -
-              GHC 11.97 DIESEL  - GHC 11.38
+              REVISED FUEL PRICES EFFECTIVE SUNDAY 8TH JANUARY, 2025. SUPER -
+              GHC 10.54 DIESEL  - GHC 11.54 | REVISED FUEL PRICES EFFECTIVE
+              SUNDAY 8TH JANUARY, 2025. SUPER - GHC 10.54 DIESEL  - GHC 11.54 |
+              REVISED FUEL PRICES EFFECTIVE SUNDAY 8TH JANUARY, 2025. SUPER -
+              GHC 10.54 DIESEL  - GHC 11.54
             </div>
           </div>
         </div>
@@ -4486,7 +4488,7 @@
         function animateCounter(counter) {
           const targetValue = parseInt(
             counter.getAttribute("data-to-value"),
-            10
+            10,
           );
           const duration = parseInt(counter.getAttribute("data-duration"), 10);
           const fromValue =
@@ -4499,7 +4501,7 @@
             let progress = currentTime - startTime;
             let value = Math.min(
               fromValue + (targetValue - fromValue) * (progress / duration),
-              targetValue
+              targetValue,
             );
 
             counter.textContent = Math.round(value);
