@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <meta
     http-equiv="content-type"
@@ -47,7 +47,7 @@
           i = a.createElement("canvas"),
           p = i.getContext && i.getContext("2d");
         function s(e, t) {
-          p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0);
+          (p.clearRect(0, 0, i.width, i.height), p.fillText(e, 0, 0));
           e = i.toDataURL();
           return (
             p.clearRect(0, 0, i.width, i.height),
@@ -57,9 +57,9 @@
         }
         function c(e) {
           var t = a.createElement("script");
-          (t.src = e),
+          ((t.src = e),
             (t.defer = t.type = "text/javascript"),
-            a.getElementsByTagName("head")[0].appendChild(t);
+            a.getElementsByTagName("head")[0].appendChild(t));
         }
         for (
           o = Array("flag", "emoji"),
@@ -68,7 +68,7 @@
           r < o.length;
           r++
         )
-          (t.supports[o[r]] = (function (e) {
+          ((t.supports[o[r]] = (function (e) {
             if (p && p.fillText)
               switch (
                 ((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)
@@ -76,21 +76,21 @@
                 case "flag":
                   return s(
                     "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                    "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+                    "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f",
                   )
                     ? !1
                     : !s(
                         "\ud83c\uddfa\ud83c\uddf3",
-                        "\ud83c\uddfa\u200b\ud83c\uddf3"
+                        "\ud83c\uddfa\u200b\ud83c\uddf3",
                       ) &&
                         !s(
                           "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                          "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                          "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f",
                         );
                 case "emoji":
                   return !s(
                     "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
-                    "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+                    "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff",
                   );
               }
             return !1;
@@ -98,8 +98,8 @@
             (t.supports.everything = t.supports.everything && t.supports[o[r]]),
             "flag" !== o[r] &&
               (t.supports.everythingExceptFlag =
-                t.supports.everythingExceptFlag && t.supports[o[r]]);
-        (t.supports.everythingExceptFlag =
+                t.supports.everythingExceptFlag && t.supports[o[r]]));
+        ((t.supports.everythingExceptFlag =
           t.supports.everythingExceptFlag && !t.supports.flag),
           (t.DOMReady = !1),
           (t.readyCallback = function () {
@@ -118,7 +118,7 @@
                 })),
             (e = t.source || {}).concatemoji
               ? c(e.concatemoji)
-              : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
+              : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))));
       })(window, document, window._wpemojiSettings);
     </script>
 
@@ -292,8 +292,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -1593,7 +1593,7 @@
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98"
                                       >
                                         <a href="#" style="color: #4d0074"
-                                          >Media Center
+                                          >Media & Charity
                                         </a>
                                         <ul class="sub-menu">
                                           <li
@@ -1607,17 +1607,17 @@
                                               >Gallery</a
                                             >
                                           </li>
-                                          <!-- <li
-                                            id="menu-item-103"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"
+                                          <li
+                                            id="menu-item-94"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"
                                           >
                                             <a
-                                              href="videocenter.html"
+                                              href="charity.html"
                                               class="sub-title"
                                               style="color: #666769"
-                                              >Video</a
+                                              >Kingsperp Charity Program</a
                                             >
-                                          </li> -->
+                                          </li>
                                         </ul>
                                       </li>
 
