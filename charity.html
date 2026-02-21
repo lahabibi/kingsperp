@@ -1812,6 +1812,7 @@
               class="elementor-section elementor-inner-section elementor-element elementor-element-26b29b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
               data-id="26b29b3"
               data-element_type="section"
+              style="margin-left: 10px; margin-right: 10px"
             >
               <div class="elementor-container elementor-column-gap-default">
                 <div
@@ -1935,6 +1936,7 @@
               class="elementor-section elementor-inner-section elementor-element elementor-element-29ccc6c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
               data-id="29ccc6c"
               data-element_type="section"
+              style="margin-left: 10px; margin-right: 10px"
             >
               <div class="elementor-container elementor-column-gap-default">
                 <div
@@ -2911,16 +2913,51 @@
     ></script>
 
     <script>
-      document.querySelectorAll(".hover-video").forEach((video) => {
-        video.addEventListener("mouseenter", () => {
-          video.play();
-        });
+      const videos = document.querySelectorAll(".hover-video");
 
-        video.addEventListener("mouseleave", () => {
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+      // ===== DESKTOP (HOVER ONLY) =====
+      if (!isMobile) {
+        videos.forEach((video) => {
           video.pause();
           video.currentTime = 0;
+
+          video.addEventListener("mouseenter", () => {
+            video.play();
+          });
+
+          video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+          });
         });
-      });
+      }
+
+      // ===== MOBILE (SCROLL PLAY) =====
+      if (isMobile) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const video = entry.target;
+
+              if (entry.isIntersecting) {
+                video.play();
+              } else {
+                video.pause();
+                video.currentTime = 0;
+              }
+            });
+          },
+          {
+            threshold: 0.6,
+          },
+        );
+
+        videos.forEach((video) => {
+          observer.observe(video);
+        });
+      }
     </script>
 
     <!-- <script>
