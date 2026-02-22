@@ -21,10 +21,17 @@
     #1f1f2100 100%
   );
   opacity: 0.8;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85 .elementor-element.elementor-element-36f826a {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin-top: -9em;
   margin-bottom: 0em;
   padding: 13em 1em 6em 1em;
@@ -217,14 +224,21 @@
 .elementor-85
   .elementor-element.elementor-element-11165f0
   > .elementor-element-populated {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 0px 0px 0px 0px;
 }
 .elementor-85
   .elementor-element.elementor-element-11165f0
   > .elementor-element-populated
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85 .elementor-element.elementor-element-2501754 img {
   width: 100%;
@@ -277,7 +291,11 @@
 .elementor-85
   .elementor-element.elementor-element-5f80cfd
   > .elementor-element-populated {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin: 0em -2em 0em 0em;
   --e-column-margin-right: -2em;
   --e-column-margin-left: 0em;
@@ -287,7 +305,10 @@
   .elementor-element.elementor-element-5f80cfd
   > .elementor-element-populated
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85 .elementor-element.elementor-element-5f80cfd {
   z-index: 2;
@@ -513,7 +534,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
 .elementor-85
   .elementor-element.elementor-element-291da37
   > .elementor-element-populated {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin: 0em 0em 0em 0em;
   --e-column-margin-right: 0em;
   --e-column-margin-left: 0em;
@@ -523,7 +548,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
   .elementor-element.elementor-element-291da37
   > .elementor-element-populated
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-3be6e45
@@ -686,7 +714,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
   border-style: solid;
   border-width: 1px 0px 0px 0px;
   border-color: var(--e-global-color-a185853);
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 30px 0px 0px 0px;
@@ -694,7 +726,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
 .elementor-85
   .elementor-element.elementor-element-cf26cc2
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-39578c2
@@ -798,7 +833,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
 }
 .elementor-85 .elementor-element.elementor-element-44dea03 {
   overflow: hidden;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 7em 1em 13em 1em;
 }
 .elementor-85
@@ -821,7 +860,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-3d1bdd9 {
   background-size: cover;
   opacity: 1;
   mix-blend-mode: multiply;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-44dea03
@@ -1277,13 +1319,20 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
   background-color: var(--e-global-color-a185853);
 }
 .elementor-85 .elementor-element.elementor-element-a1db18a {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 1em 1em 0em 1em;
 }
 .elementor-85
   .elementor-element.elementor-element-a1db18a
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-1d75de3:not(
@@ -1302,7 +1351,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
   border-radius: 0px 0px 0px 0px;
 }
 .elementor-85 .elementor-element.elementor-element-1d75de3 {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin-top: -8em;
   margin-bottom: 6em;
   padding: 2em 2em 2em 2em;
@@ -1310,7 +1363,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
 .elementor-85
   .elementor-element.elementor-element-1d75de3
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-bc-flex-widget
   .elementor-85
@@ -1476,7 +1532,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
 }
 .elementor-85 .elementor-element.elementor-element-fb4b122 {
   overflow: hidden;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 0em 1em 10em 1em;
 }
 .elementor-85
@@ -1493,7 +1553,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
   .elementor-element.elementor-element-fb4b122
   > .elementor-background-overlay {
   opacity: 0.2;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-bc-flex-widget
   .elementor-85
@@ -1939,7 +2002,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
 .elementor-85
   .elementor-element.elementor-element-9c28e4c
   > .elementor-element-populated {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   margin: 0px -12px 0px -23px;
   --e-column-margin-right: -12px;
   --e-column-margin-left: -23px;
@@ -1949,7 +2016,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
   .elementor-element.elementor-element-9c28e4c
   > .elementor-element-populated
   > .elementor-background-overlay {
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-ccbb382
@@ -2113,7 +2183,10 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
   background-size: cover;
   opacity: 0.2;
   mix-blend-mode: lighten;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85
   .elementor-element.elementor-element-f52c038
@@ -2122,7 +2195,11 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
     hue-rotate(0deg);
 }
 .elementor-85 .elementor-element.elementor-element-f52c038 {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 7em 1em 7em 1em;
 }
 .elementor-85 .elementor-element.elementor-element-4c99fe0 img {
@@ -2362,10 +2439,17 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
     var(--e-global-color-a291686) 55%
   );
   opacity: 0.91;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85 .elementor-element.elementor-element-1ffaa08 {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 0em 0em 0em 0em;
 }
 .elementor-85
@@ -2571,10 +2655,17 @@ body.rtl .elementor-85 .elementor-element.elementor-element-8cef8f1 {
     #f2295b00 50%
   );
   opacity: 0.7;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 .elementor-85 .elementor-element.elementor-element-1cadc7e {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
   padding: 12em 1em 12em 1em;
 }
 .elementor-85 .elementor-element.elementor-element-771c3e2 {
