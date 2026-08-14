@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /hts-cache/
+Disallow: /hts-log.txt
+Disallow: /cookies.txt
+
+Sitemap: https://kingsperpoil.com/sitemap.xml
