@@ -4509,19 +4509,19 @@
             return;
           }
 
-          const nextImage = images[index];
-          isTransitioning = true;
-          updateIndicators(index);
+	          const nextImage = images[index];
+	          isTransitioning = true;
 
-          preloadImage(nextImage).then(() => {
-            banner.style.setProperty(
-              "--hero-next-image",
-              `url("${nextImage}")`,
-            );
-            banner.classList.add("transitioning");
+	          preloadImage(nextImage).then(() => {
+	            banner.style.setProperty(
+	              "--hero-next-image",
+	              `url("${nextImage}")`,
+	            );
+	            banner.classList.add("transitioning");
+	            updateIndicators(index);
 
-            window.clearTimeout(transitionTimer);
-            transitionTimer = window.setTimeout(() => {
+	            window.clearTimeout(transitionTimer);
+	            transitionTimer = window.setTimeout(() => {
               setBackground(nextImage);
               banner.classList.remove("transitioning");
               currentIndex = index;
