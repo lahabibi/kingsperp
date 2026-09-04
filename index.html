@@ -276,22 +276,46 @@
       .bannerMobile::before {
         content: "";
         position: absolute;
-        top: -100%; /* Start above */
-        left: 0;
+        inset: 0;
         width: 100%;
         height: 100%;
+        background-image: var(
+          --hero-next-image,
+          url("./advanture.icu/dizoil/image/test.jpg")
+        );
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        pointer-events: none;
         opacity: 0;
+        transform: scale(1.035);
         transition:
-          top 1s ease-in-out,
-          opacity 1s ease-in-out;
+          opacity 1.4s ease,
+          transform 2.8s ease;
+        will-change: opacity, transform;
+        z-index: 0;
       }
 
       .bannerMobile.transitioning::before {
-        top: 0; /* Move to visible position */
         opacity: 1;
+        transform: scale(1);
+      }
+
+      .bannerMobile > .elementor-background-overlay {
+        z-index: 1;
+      }
+
+      .bannerMobile > .elementor-container {
+        position: relative;
+        z-index: 2;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .bannerMobile::before {
+          transition:
+            opacity 0.01s linear,
+            transform 0.01s linear;
+        }
       }
 
       img.wp-smiley,
@@ -4434,12 +4458,41 @@
         const banner = document.querySelector(".bannerMobile");
         const indicators = document.querySelectorAll(".indicator");
         const images = [
+          "./advanture.icu/dizoil/image/test.jpg",
           "./advanture.icu/dizoil/image/test6.jpg",
-          "./advanture.icu/dizoil/image/y1.jpg",
           "./advanture.icu/dizoil/image/tamale.jpg",
         ];
         let currentIndex = 0;
         let interval;
+        let transitionTimer;
+        let isTransitioning = false;
+        const preloadedImages = new Map();
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        const transitionDuration = prefersReducedMotion ? 0 : 1400;
+        const autoScrollDelay = 6500;
+
+        if (!banner || indicators.length === 0) {
+          return;
+        }
+
+        function preloadImage(src) {
+          if (preloadedImages.has(src)) {
+            return preloadedImages.get(src);
+          }
+
+          const image = new Image();
+          const ready = new Promise((resolve) => {
+            image.onload = resolve;
+            image.onerror = resolve;
+          });
+          image.src = src;
+          preloadedImages.set(src, ready);
+          return ready;
+        }
+
+        images.forEach(preloadImage);
 
         function updateIndicators(index) {
           indicators.forEach((dot, i) => {
@@ -4447,32 +4500,67 @@
           });
         }
 
+        function setBackground(src) {
+          banner.style.backgroundImage = `url("${src}")`;
+        }
+
         function changeBackground(index = (currentIndex + 1) % images.length) {
-          currentIndex = index;
+          if (index === currentIndex || isTransitioning) {
+            return;
+          }
 
-          banner.style.backgroundImage = `url('${images[currentIndex]}')`;
-          banner.classList.add("transitioning");
+          const nextImage = images[index];
+          isTransitioning = true;
+          updateIndicators(index);
 
-          setTimeout(() => {
-            banner.classList.remove("transitioning");
-            updateIndicators(currentIndex);
-          }, 1000);
+          preloadImage(nextImage).then(() => {
+            banner.style.setProperty(
+              "--hero-next-image",
+              `url("${nextImage}")`,
+            );
+            banner.classList.add("transitioning");
+
+            window.clearTimeout(transitionTimer);
+            transitionTimer = window.setTimeout(() => {
+              setBackground(nextImage);
+              banner.classList.remove("transitioning");
+              currentIndex = index;
+              isTransitioning = false;
+            }, transitionDuration);
+          });
         }
 
         function startAutoScroll() {
-          interval = setInterval(() => changeBackground(), 6000);
+          stopAutoScroll();
+          interval = setInterval(() => changeBackground(), autoScrollDelay);
         }
 
-        // Click event for indicators
+        function stopAutoScroll() {
+          if (interval) {
+            clearInterval(interval);
+            interval = null;
+          }
+        }
+
         indicators.forEach((dot, index) => {
           dot.addEventListener("click", () => {
-            clearInterval(interval); // Stop auto-scroll
-            changeBackground(index); // Change to clicked image
-            startAutoScroll(); // Restart auto-scroll
+            stopAutoScroll();
+            changeBackground(index);
+            startAutoScroll();
           });
         });
 
-        startAutoScroll(); // Start auto-scrolling initially
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            stopAutoScroll();
+          } else {
+            startAutoScroll();
+          }
+        });
+
+        setBackground(images[currentIndex]);
+        updateIndicators(currentIndex);
+        startAutoScroll();
       });
     </script>
 
