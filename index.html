@@ -2432,11 +2432,11 @@
         <div class="ticker-wrap">
           <div class="ticker">
             <div class="ticker_item">
-              REVISED FUEL PRICES EFFECTIVE FRIDAY 4TH SEPTEMBER, 2026. SUPER -
-              GHC 15.41 DIESEL  - GHC 17.15 | REVISED FUEL PRICES EFFECTIVE
-              FRIDAY 4TH SEPTEMBER, 2026. SUPER - GHC 15.41 DIESEL  - GHC 17.15
-              | REVISED FUEL PRICES EFFECTIVE FRIDAY 4TH SEPTEMBER, 2026. SUPER
-              - GHC 15.41 DIESEL  - GHC 17.15
+              REVISED FUEL PRICES EFFECTIVE THURSDAY 17TH SEPTEMBER, 2026. SUPER
+              - GHC 16.92 DIESEL  - GHC 17.62 | REVISED FUEL PRICES EFFECTIVE
+              THURSDAY 17TH SEPTEMBER, 2026. SUPER - GHC 16.92
+              DIESEL  - GHC 17.62 | REVISED FUEL PRICES EFFECTIVE THURSDAY 17TH
+              SEPTEMBER, 2026. SUPER - GHC 16.92 DIESEL  - GHC 17.62
             </div>
           </div>
         </div>
@@ -4509,19 +4509,19 @@
             return;
           }
 
-	          const nextImage = images[index];
-	          isTransitioning = true;
+          const nextImage = images[index];
+          isTransitioning = true;
 
-	          preloadImage(nextImage).then(() => {
-	            banner.style.setProperty(
-	              "--hero-next-image",
-	              `url("${nextImage}")`,
-	            );
-	            banner.classList.add("transitioning");
-	            updateIndicators(index);
+          preloadImage(nextImage).then(() => {
+            banner.style.setProperty(
+              "--hero-next-image",
+              `url("${nextImage}")`,
+            );
+            banner.classList.add("transitioning");
+            updateIndicators(index);
 
-	            window.clearTimeout(transitionTimer);
-	            transitionTimer = window.setTimeout(() => {
+            window.clearTimeout(transitionTimer);
+            transitionTimer = window.setTimeout(() => {
               setBackground(nextImage);
               banner.classList.remove("transitioning");
               currentIndex = index;
