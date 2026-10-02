@@ -238,38 +238,40 @@ iframe {
   }
 
   .bannerMobile {
-    background-position: center top !important;
+    background-position: center center !important;
     background-size: cover !important;
     height: auto !important;
+    isolation: isolate;
     margin-top: 0 !important;
-    min-height: 640px !important;
-    min-height: min(680px, calc(100svh - 74px)) !important;
+    min-height: 540px !important;
+    min-height: clamp(540px, calc(100svh - 74px), 680px) !important;
   }
 
   .bannerMobile::before {
-    background-position: center top !important;
+    background-position: center center !important;
   }
 
   .elementor-84 .elementor-element.elementor-element-119671a3 > .elementor-background-overlay {
     background: linear-gradient(
       180deg,
-      rgba(5, 8, 12, 0.54) 0%,
-      rgba(5, 8, 12, 0.18) 45%,
-      rgba(5, 8, 12, 0.55) 100%
+      rgba(8, 13, 20, 0.08) 0%,
+      rgba(8, 13, 20, 0.16) 38%,
+      rgba(8, 13, 20, 0.62) 70%,
+      rgba(8, 13, 20, 0.92) 100%
     ) !important;
     opacity: 1 !important;
   }
 
   .elementor-84 .elementor-element.elementor-element-119671a3 {
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
     margin-top: 0 !important;
-    padding: 54px 18px 72px !important;
+    padding: 36px 20px 96px !important;
   }
 
   .elementor-84 .elementor-element.elementor-element-119671a3 > .elementor-container {
-    align-items: flex-start;
-    min-height: inherit;
+    align-items: flex-end;
+    min-height: 0 !important;
     position: static !important;
   }
 
@@ -277,7 +279,7 @@ iframe {
     overflow: visible !important;
     padding: 0 !important;
     position: static !important;
-    width: min(100%, 340px);
+    width: min(100%, 360px);
   }
 
   .elementor-84 .elementor-element.elementor-element-28ea41f2,
@@ -286,10 +288,10 @@ iframe {
   }
 
   .elementor-84 .elementor-element.elementor-element-53e5398 > .elementor-widget-wrap {
-    max-width: 330px;
+    max-width: 350px;
     text-shadow:
-      0 2px 5px rgba(0, 0, 0, 0.72),
-      0 12px 28px rgba(0, 0, 0, 0.54);
+      0 2px 5px rgba(0, 0, 0, 0.7),
+      0 14px 34px rgba(0, 0, 0, 0.48);
   }
 
   .elementor-84 .elementor-element.elementor-element-45739d61,
@@ -299,25 +301,19 @@ iframe {
   }
 
   .bannercaption {
-    font-size: 36px !important;
-    line-height: 1.14 !important;
-    max-width: 325px !important;
+    font-size: clamp(38px, 10.5vw, 48px) !important;
+    letter-spacing: -0.035em !important;
+    line-height: 1.04 !important;
+    margin: 0 !important;
+    max-width: 350px !important;
     text-shadow:
-      0 2px 5px rgba(0, 0, 0, 0.72),
-      0 12px 28px rgba(0, 0, 0, 0.54) !important;
+      0 2px 5px rgba(0, 0, 0, 0.76),
+      0 14px 34px rgba(0, 0, 0, 0.58) !important;
     width: auto !important;
   }
 
   .bannerlongtext {
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    display: -webkit-box !important;
-    font-size: 14px !important;
-    line-height: 1.55 !important;
-    margin: 12px 0 0 !important;
-    max-width: 320px;
-    overflow: hidden !important;
-    visibility: visible !important;
+    display: none !important;
   }
 
   .elementor-button {
@@ -325,26 +321,56 @@ iframe {
   }
 
   .elementor-84 .elementor-element.elementor-element-3eb85a22 {
-    margin-top: 16px !important;
+    margin-top: 22px !important;
   }
 
   .elementor-84 .elementor-element.elementor-element-3eb85a22 .elementor-button {
-    border-radius: 6px !important;
-    box-shadow: 0 12px 28px rgba(77, 0, 116, 0.3);
-    padding: 13px 20px !important;
+    background: linear-gradient(135deg, #62008f 0%, #440068 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 14px 32px rgba(26, 0, 39, 0.4);
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em;
+    min-height: 52px;
+    padding: 15px 23px !important;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease !important;
+  }
+
+  .elementor-84 .elementor-element.elementor-element-3eb85a22 .elementor-button:active {
+    box-shadow: 0 8px 20px rgba(26, 0, 39, 0.34);
+    transform: translateY(1px);
+  }
+
+  .elementor-84
+    .elementor-element.elementor-element-3eb85a22
+    .elementor-button
+    .elementor-align-icon-right {
+    margin-left: 12px;
   }
 
   .indicatorContainer {
-    bottom: 18px !important;
-    gap: 10px;
+    align-items: center;
+    bottom: 27px !important;
+    gap: 8px;
     z-index: 3;
   }
 
   .indicator {
     border: 1px solid rgba(255, 255, 255, 0.42);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.24);
-    height: 9px;
-    width: 9px;
+    height: 8px;
+    transition:
+      background-color 0.3s ease,
+      width 0.3s ease;
+    width: 8px;
+  }
+
+  .indicator.active {
+    border-radius: 999px;
+    width: 24px;
   }
 
   .elementor-84 .elementor-element.elementor-element-57267acc {
@@ -423,21 +449,17 @@ iframe {
   }
 
   .bannerMobile {
-    min-height: 620px !important;
+    min-height: 520px !important;
+    min-height: clamp(520px, calc(100svh - 74px), 620px) !important;
   }
 
   .elementor-84 .elementor-element.elementor-element-119671a3 {
-    padding-top: 50px !important;
-    padding-bottom: 70px !important;
+    padding: 30px 18px 86px !important;
   }
 
   .bannercaption {
-    font-size: 32px !important;
-    max-width: 292px !important;
-  }
-
-  .bannerlongtext {
-    max-width: 292px;
+    font-size: clamp(36px, 10.5vw, 42px) !important;
+    max-width: 320px !important;
   }
 }
 
