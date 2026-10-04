@@ -156,8 +156,15 @@ iframe {
     width: auto !important;
   }
 
+  .elementor-381 .elementor-element.elementor-element-c4634f7 > .elementor-widget-wrap {
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
   .elementor-381 .elementor-element.elementor-element-f58f933 {
-    margin-left: auto;
+    margin-left: 0;
+    order: -1;
   }
 
   .hfe-site-logo-img {
